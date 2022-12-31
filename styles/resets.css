@@ -1,3 +1,7 @@
+/* link stylesheets */
+@import 'style.css';
+@import 'utilities.css';
+
 /* ------ */
 /*Resets  */
 /* ------ */
@@ -26,6 +30,19 @@ dl {
   margin: 0;
 }
 
+/* reset font weigth */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
@@ -33,6 +50,10 @@ html:focus-within {
 
 /* the body */
 body {
+  font-family: var(--ff-sans-normal);
+  font-size: var(--fs-400);
+  color: hsl(var(--clr-white));
+  background-color: hsl(var(--clr-dark));
   line-height: 1.5;
   min-height: 100vh;
 }
